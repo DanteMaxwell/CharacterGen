@@ -22,7 +22,7 @@ class Stats
   end
 
   def max_sp
-    (level * 5) + (intelligence * 5) + (endurance * 10)
+    (level * 5) + (endurance * 10) + (intelligence * 5)
   end
 
   def max_lp
