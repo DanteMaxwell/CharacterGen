@@ -56,5 +56,7 @@ class Skills
   end
 
   private
-  attr_reader :stats
+  def stats
+    @stats
+  end
 end
