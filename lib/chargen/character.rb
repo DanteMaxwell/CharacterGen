@@ -2,14 +2,21 @@ require "chargen/stats"
 require "chargen/skills"
 
 class Character
-  attr_reader :stats, :skills
+  attr_reader :name, :stats, :skills
 
-  def initialize(name, faction, stats, skills, traits, three_tags)
+  def initialize(name, stats=Stats.new)
     @name = name
-    @faction = faction
-    @stats = Stats.new
-    @skills = Skills.new(@stats)
-    @traits = traits
-    @three_tags = three_tags
+    @stats = stats
+    @skills = Skills.new stats
   end
+
+  def level
+    stats.level
+  end
+
+  # TODO: Concepts referenced that need implemented:
+  #
+  # faction
+  # traits
+  # three tags
 end
