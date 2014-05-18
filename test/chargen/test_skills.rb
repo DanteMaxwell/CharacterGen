@@ -1,5 +1,4 @@
 require "minitest/autorun"
-require "chargen/stats"
 require "chargen/skills"
 
 class TestSkills < MiniTest::Unit::TestCase
