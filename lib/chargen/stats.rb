@@ -31,7 +31,7 @@ class Stats
 
   private
   def data_or_default(key, default=STAT_DEFAULT)
-    @data[key.to_sym] || default
+    @data[key] || default
   end
 
   # TODO: Methods defined that need implemented:
