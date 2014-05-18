@@ -1,5 +1,7 @@
+require "chargen/stats"
+
 class Skills
-  def initialize(stats)
+  def initialize(stats=Stats.new)
     @stats = stats
   end
 

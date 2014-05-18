@@ -67,4 +67,8 @@ class TestSkills < MiniTest::Unit::TestCase
     stats = Stats.new(agility: 5, endurance: 6, strength: 8)
     assert_equal (5 + 6 + 8), Skills.new(stats).unarmed
   end
+
+  def test_assume_minimum_stats_if_none_provided
+    assert_equal (1 + 1 + 1), Skills.new.unarmed
+  end
 end
