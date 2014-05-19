@@ -24,15 +24,17 @@ class Stats
 	private
 	def first_roll
 		#stuff regarding randomization for the first 7-stat roll
+		#likely to use 1 + rand(10) for each stat
+		#Additional possibilities include creating a Dice class which could then be used to directly replace responses related to dice or random integers.
 	end
 	def re_roll_1
 		#enable selection of a full reroll or move to singular rerolls
 	end
 	def re_roll_2
-		#if singular reroll, choose new, else give options
+		#if singular reroll, choose new target, else give options
 	end
 	def re_roll_3
-		#if singular reroll, choose new, else give options
+		#if singular reroll, choose new target, else give options
 	end
 	def calculate_max_hp
 		@max_hp = (5 * :level) + (5 * :strength) + (10 * :endurance)
@@ -41,7 +43,7 @@ class Stats
 		@max_sp = (5 * :level) + (10 * :endurance) + (5 * :intelligence)
 	end
 	def calculate_max_lp
-		@max_lp = 1 + (:level / 5).floor + (:endurance / 4).floor
+		@max_lp = 1 + (:level / 5).floor + (:endurance / 3).floor
 	end
 end
 
