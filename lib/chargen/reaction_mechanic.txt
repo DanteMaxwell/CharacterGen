@@ -1,0 +1,56 @@
+Basically, this is how interactions will work:
+
+Reaction will function as a number-line, range -100 to +100.
+
+All negative values will attack the Player/party on sight.
+The degree of negativity will determine the chance that the aggressor will fight with intent to kill the Player/party.
+
+Example:  A Player attempts to steal from a shopkeep and gets caught, dropping Reaction to -10.
+The shopkeeper will attack the player until either KO'd or dead, or until the Player is knocked into Incap.
+At that point, there is a 10% chance the shopkeep will attempt to kill the Player, and a 90% chance he will leave him sitting and get guards to arrest the player.
+However, if during combat, the Player causes a crippling injury, or otherwise brings the shopkeeper close to death, Reaction will further decrease,
+causing a further liklihood that the shopkeeper will favor lethal action in the event the Player is kocked into Incap.
+
+Positive values will be ranked by their overall quality, which can lead to changes in barter prices and interactions with NPCs.
+
+</= 0 :  Hatred, see negative values
+1 - 19:  Dislike - They don't like you, but they will still tolerate your presence
+20 - 39:  Suspicious - They don't dislike you, but they don't really want to be seen with you or trust you
+40 - 59  Neutral - This is basically the default 'could be better, could be worse' scenario
+60 - 79:  Polite - This will generally lead to slight discounts in shops, increased interaction options
+80 - 99:  Friendly - This will certainly lead to discounts in shops, increased interaction options, even quests otherwise unavailable without their trust
+100:  Revered - Getting here means they trust you completely, and should any other attempt to attack you, they will gladly fight on your behalf
+
+Initial Reaction will be calculated on several factors:
+- The Player/Party's Average Charisma
+- The Reputation of the Player/Party in that region
+- Any Buffs/DeBuffs present (example, the spell/charm Good Impression will grant a +15 on top of Reaction while active)
+
+On Reputation:
+
+Reputation will vary based upon interactions and quests done by players/parties.
+Example 1:  Being caught stealing will cause a -5 across a region.  Assault, -10.  Murder, -20.
+Example 2:  Completing a quest that saves the region from a threat will see an increase proportional to the severity in the quest guideline.
+	The more 
+
+Unless dictated by faction or trait, initial reputation modifer should be 0 in all regions.
+Reputation will also run on a number line from -100 to +100.
+
+
+
+Additional Limitations to NPC interaction:
+Intelligence
+
+NPC interactions can be changed by the Player's Intelligence.
+Some interactions (and even quests) will not be offerred if the Player's Intelligence stat is too high or too low.
+Dialogue may be modified based upon Intelligence as well ("Dumb-Dumb-Speak," "Normal," "Knowledged")
+
+Example 1:  An NPC requests the Player's help by asking him to activate the ignition switch on a machine.
+
+Normal:		 	"It's the small, red lever on the far right."
+Dumb-Dumb-Speak:	"RED LEVER, on RIGHT.  No, your OTHER right."
+Knowledged:		"Could you toggle the ignition switch for me?" (he motions to the right)
+
+
+Example 2:  An NPC who needs help from a scientist (requiring a minimum Science skill of 50 and Intelligence of 7 to initialize the quest).
+Example 2 (subverted):  An NPC with a sign saying "DOWN WIT SIENS!" won't allow a player with Science Skill above 50, or Intelligence above 7 to interact with him.
