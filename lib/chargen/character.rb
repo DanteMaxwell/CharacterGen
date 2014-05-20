@@ -11,6 +11,9 @@ class Character
     @name = name
     @stats = stats
     @skills = Skills.new stats
+    @faction = faction
+    @traits = traits
+    @tags = tags
   end
 
   def level
